@@ -612,13 +612,19 @@
      <div class="footer-social"><a href="https://github.com/salahuddingfx" target="_blank" rel="noopener noreferrer" class="social-link"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/salahuddingfx" target="_blank" rel="noopener noreferrer" class="social-link"> <i class="fab fa-twitter"></i> </a> <a href="https://linkedin.com/in/salahuddingfx" target="_blank" rel="noopener noreferrer" class="social-link"> <i class="fab fa-linkedin-in"></i> </a> <a href="https://instagram.com/salahuddingfx" target="_blank" rel="noopener noreferrer" class="social-link"> <i class="fab fa-instagram"></i> </a>
     <a href="https://wa.me/8801851075537" target="_blank" rel="noopener noreferrer" class="social-link"> <i class="fab fa-whatsapp"></i> </a>
      </div>
-     <p class="footer-text">
-        © <span id="currentYear"></span> Salah Uddin Kader. All rights reserved.
-    </p>
+        <p id="siteCopyright" class="footer-text"></p>
     </div>
    </div>
   </footer>
   <script src="Assets/script.js"></script>
- /* <script></script> */
+  <script>
+  (function () {
+    const el = document.getElementById('siteCopyright');
+    if (!el) return;
+    const year = new Date().getFullYear();
+    const owner = 'Salah Uddin Kader'; 
+    el.innerHTML = `© ${year} ${owner}. All rights reserved.`;
+  })();
+</script>
  </body>
 </html>
