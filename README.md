@@ -44,6 +44,9 @@ A cyberpunk-themed interactive portfolio featuring neon lighting, hologram effec
 ---
 
 ## 📁 Project Structure
+
+
+```
 Neon-Portfolio/
 │
 ├── index.html
@@ -54,3 +57,5 @@ Neon-Portfolio/
 │
 └── Icon/
 └── favicon + assets
+
+```
